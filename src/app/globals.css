@@ -1,0 +1,88 @@
+/* global.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(0, 255, 17);
+}
+.hero {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+
+  background-image: url('./front-view-cyber-monday-composition.jpg');
+}
+.hero h1 {
+  font-size: 35px;
+  font-weight: 800;
+}
+.hero p {
+  font-size: 20px;
+  letter-spacing: 0.3px;
+}
+.hero button {
+  padding: 12px 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  font: 25px;
+  color: white;
+  background-color: rgba(139, 0, 0, 0.957);
+  border: none;
+}
+/* Pagination container position */
+.swiper-pagination {
+  bottom: 20px !important;
+}
+
+/* All dots */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #ffffff80; /* white with transparency */
+  opacity: 1;
+  border-radius: 50%;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+}
+
+/* Active dot */
+.swiper-pagination-bullet-active {
+  width: 25px;
+  border-radius: 10px;
+  background: #ff6f61; /* your theme color */
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: red !important; /* Arrow color */
+
+  width: 20px; /* Round size */
+  height: 20px;
+  border-radius: 50%; /* Make it circle */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 10px !important; /* Arrow icon size */
+}
+.compny {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.product {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}

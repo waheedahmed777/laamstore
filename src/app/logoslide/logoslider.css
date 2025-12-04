@@ -1,0 +1,62 @@
+/* Container */
+.logo-slider-wrapper {
+  width: 100%;
+  padding: 40px 0;
+}
+
+/* SLIDE BOX — 50% Rounded */
+.logo-box {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* Circle */
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(128, 127, 127, 0.1);
+
+  transition: transform 0.3s ease;
+}
+
+.logo-box:hover {
+  transform: scale(1.1);
+}
+
+/* Logo Image Fit */
+.logo-box img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+/* PAGINATION DOTS */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #bbb;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff6f61; /* Active Dot Color */
+  width: 16px;
+  height: 16px;
+}
+
+/* NAVIGATION ARROWS */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff6f61; /* Arrow Color */
+  font-weight: bold;
+  transform: scale(1.4); /* Bigger arrows */
+}
+
+/* Arrow hover */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: black;
+}

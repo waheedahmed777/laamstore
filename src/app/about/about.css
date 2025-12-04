@@ -1,0 +1,105 @@
+/* ------------------- CSS BELOW -------------------
+Create AboutPage.css in same folder and paste: 
+-------------------------------------------------- */
+
+/* Wrapper */
+.about-wrapper {
+  width: 90%;
+  margin: auto;
+  padding: 60px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+.about-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 800;
+}
+.hero-title span {
+  color: #5a4bff;
+}
+
+.hero-sub {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #555;
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Mission */
+.mission-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.features-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  padding: 25px;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Team */
+.team-grid {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.team-card {
+  padding: 25px;
+  border-radius: 16px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.team-avatar {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,118 @@
+/* -------------------------
+   MAIN PRODUCTS CONTAINER 
+--------------------------*/
+.products-container {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  padding: 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+/* -------------------------
+        PRODUCT CARD
+--------------------------*/
+.product-card {
+  position: relative;
+  overflow: hidden;
+
+  width: 250px;
+  height: 400px;
+  text-align: center;
+
+  background-color: #fff;
+  transition: all 0.3s ease;
+  color: white;
+  border-radius: 10px;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* -------------------------
+   SLIDE-UP NAME + PRICE
+--------------------------*/
+
+/* Hover par slide + white overlay */
+
+.product-card h3 {
+  background-color: rgba(139, 0, 0, 0.957);
+  width: 90px;
+  padding: 14px 0;
+  border-radius: 0px 0px 10px 0px;
+  margin-top: 0;
+}
+/* -------------------------
+        BUY BUTTON
+--------------------------*/
+.buy-button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  padding: 10px 15px;
+  background-color: rgba(139, 0, 0, 0.874);
+  color: #fff;
+  border: none;
+
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: rgb(139, 0, 0);
+}
+.product-info a {
+  margin-top: 200px;
+  margin-left: 10;
+  text-decoration: none;
+  color: aliceblue;
+  text-align: left;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* kitni lines dikhani hain */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.product-info .price {
+  margin-left: 10px;
+  margin-top: -5px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+.product-card .heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgb(252, 252, 252);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.product-card:hover .product-info a,
+.product-card:hover .product-info .price,
+.product-card:hover .product-info .description,
+.product-card:hover .product-info .buy-button {
+  transform: translateY(-20px);
+}
+.product-info {
+  transition: 0.3s ease-in-out;
+  margin-top: -4px;
+}
+.product-info .description {
+  transition: transform 0.3s ease;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* kitni lines dikhani hain */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 10px;
+  position: relative;
+  margin-left: 10px;
+  text-align: left;
+}
