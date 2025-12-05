@@ -1,55 +1,94 @@
+/* --------- Header Container --------- */
 .Header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+  margin-bottom: 2px;
+}
+
+/* --------- Bottom Section --------- */
+.bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  color: rgb(0, 0, 0);
-  padding: 15px 30px;
-  text-align: center;
-  font-size: 24px;
-  overflow: hidden;
+  width: 100%;
+  padding: 10 20px;
 }
 
-.Header img {
-  height: 36px;
-  width: 128px;
-}
-.Header .logo img {
-  height: 80px;
-}
-.Header .logo h1 {
-  font-size: 35px;
-  color: #333;
-}
-.Header .menu ul {
-  list-style: none;
-  display: flex;
-  gap: 50px;
-  margin: 0;
-}
-.Header .menu ul li a {
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 5px 10px;
-}
-.Header .icon {
-  margin-right: 60px;
-  display: flex;
-  gap: 30px;
+/* Logo */
+.logo-img {
+  height: 40px;
   cursor: pointer;
-  size: 10px;
 }
-.Header .icon span {
-  position: absolute;
-  /* right side set */
 
-  margin-left: 20px;
-  background-color: red;
-  color: white;
-  border-radius: 50%;
-  padding: 4px 7px;
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 1;
+/* Menu Icon */
+.menu-icon {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* --------- Sidebar / Right Popup --------- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px; /* Hidden by default */
+  height: 100vh;
+  width: 260px;
+  background-color: white;
+  box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  padding: 20px;
+  z-index: 9999;
+}
+
+/* Sidebar Open State */
+.sidebar.open {
+  right: 0;
+}
+
+/* Close Button */
+.close-btn {
+  padding: 8px 15px;
+  cursor: pointer;
+  border: 1px solid black;
+  background: white;
+}
+
+/* Top Icons in Sidebar */
+.sidebar-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 25px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+/* Sidebar Icons */
+.sidebar-icon {
+  cursor: pointer;
+}
+
+/* Menu Links */
+a.link {
+  margin-bottom: 40px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 50px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+
+  transition: 0.3s ease-in-out;
+}
+a.link:hover {
+  margin-left: 5px;
+  font-weight: 800;
 }
